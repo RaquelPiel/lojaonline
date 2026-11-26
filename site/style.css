@@ -18,7 +18,7 @@ main {
 
 /* ===== CABEÇALHO ===== */
 .navbar.bg-dark {
-  background-color: var(--cor-fundo-escuro) !important; /* sobrescreve o bg-dark do Bootstrap */
+  background-color: var(--cor-fundo-escuro) !important;
   border-bottom: 4px solid var(--cor-vermelho-medio);
 }
 
@@ -39,6 +39,7 @@ main {
   color: var(--cor-cinza-claro) !important;
   font-weight: 600;
   transition: color 0.2s ease;
+  position: relative; /* Para posicionar o badge do carrinho */
 }
 
 .navbar-nav .nav-link:hover {
@@ -243,4 +244,26 @@ form a:hover {
 
 #navbar-custom {
   background-color: var(--cor-vermelho-escuro) !important;
+}
+
+/* ===== BADGE DO CARRINHO ===== */
+.badge-carrinho {
+  display: inline-block;
+  background-color: #ff3b3b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* ===== ITEM DO CARRINHO ===== */
+.item-carrinho {
+  flex-direction: row !important;
 }
